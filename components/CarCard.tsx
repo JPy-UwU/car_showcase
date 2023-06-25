@@ -3,7 +3,16 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const CarCard = () => {
+import { CarProps } from "@/types";
+import { CustomButton } from "./";
+
+interface CarCardProps {
+  car: CarProps;
+}
+
+const CarCard = ({ car }: CarCardProps) => {
+  const { city_mpg, year, make, model, transmission, drive } = car;
+
   return (
     <div>CarCard</div>
   )
