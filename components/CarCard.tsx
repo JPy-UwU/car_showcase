@@ -20,6 +20,10 @@ const CarCard = ({ car }: CarCardProps) => {
           {make} {model}
         </h2>
       </div>
+      <p>
+        <span>
+        </span>
+      </p>
     </div>
   )
 }
